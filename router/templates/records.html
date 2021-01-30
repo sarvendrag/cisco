@@ -1,0 +1,12 @@
+{% for router in routerDetails %}  
+    <tr>  
+        <td>{{ router.sapid }}</td>  
+        <td>{{ router.hostname }}</td>  
+        <td>{{ router.loopback }}</td>  
+        <td>{{ router.mac_address }}</td>  
+        <td>  
+            <a href="edit/{{ router.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+            <a href="delete/{{ router.id }}">Delete</a>  
+        </td>  
+    </tr>  
+{% endfor %}
